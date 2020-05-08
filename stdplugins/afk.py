@@ -126,10 +126,10 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)} secondes ago`"
         msg = None
-        message_to_reply = f"`Hey, My Master iz Currently OFFLINE` " + \
+        message_to_reply = f"`Hey, My Master Ad1t is Currently Offline` " + \
             f"`Reason:` **{reason}** Since: **{afk_since}**"\
             if reason \
-            else f"RIP.....\n\n**Important Notice**\n\n[Sorry ! But My Mastor Ded Forever...Sed...Very Sed...](https://telegra.ph//file/a53fa950ff31781d5930a.jpg)"
+            else f"RIP.....\n\n**Important Notice**\n\n[Sorry ! But My Master is Ded Forever...Sed...Very Sed...](https://telegra.ph//file/a53fa950ff31781d5930a.jpg)"
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
         if event.chat_id in last_afk_message:  
